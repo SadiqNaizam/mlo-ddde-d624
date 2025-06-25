@@ -44,6 +44,7 @@ export default {
 					DEFAULT: 'hsl(var(--accent))',
 					foreground: 'hsl(var(--accent-foreground))'
 				},
+				peacock: 'hsl(var(--accent-peacock))', // New accent color
 				popover: {
 					DEFAULT: 'hsl(var(--popover))',
 					foreground: 'hsl(var(--popover-foreground))'
@@ -67,6 +68,10 @@ export default {
 				lg: 'var(--radius)',
 				md: 'calc(var(--radius) - 2px)',
 				sm: 'calc(var(--radius) - 4px)'
+			},
+			fontFamily: { // Added to support new typography
+				body: ['var(--font-body)', 'sans-serif'],
+				heading: ['var(--font-heading)', 'serif'],
 			},
 			keyframes: {
 				'accordion-down': {
